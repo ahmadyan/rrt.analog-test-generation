@@ -21,9 +21,9 @@ This folder contains the source code and the experimental data reported in our m
 
 # Case studies:
 We have three case studies in the RRT folder. 
-1. The josephson junction circuit
-2. The tunnel diode circuit
-3. The ring modulator
+* The tunnel diode circuit: TDO is a low dimensional simple case study that we use as a proof of concept. It is also a very good example for experimenting with the algorithm. 
+* The josephson junction circuit: The josephson expresses a nonlinear damped oscillation. Generally it is very difficult to explore the state space of this example without modern planning tools such as RRT.
+* The ring modulator: The ring modulator is a high-dimensional modulator circuit that we use as our main case study.
 
 # Notes:
 * The main script for executing our experiment is the main.m, In our experiments, we usually ran that file several times for different parameters. The script that bootstrap it is script_batch_journal.m We saved the data for each run in the .mat file. Loading that file brings up our results. We also saved the corresponding figure in the paper as well. For example, rrt_a_0_5.mat --> rrt_0_5.pdf
